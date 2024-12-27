@@ -1,0 +1,56 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid container styling */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Spacing between cards */
+    max-width: 60%; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid */
+    justify-items: center; /* Center cards horizontally */
+}
+
+/* Card image styling */
+#grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc; /* Add border to the cards */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on cards */
+#grid img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    #grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust columns for smaller screens */
+    }
+}
