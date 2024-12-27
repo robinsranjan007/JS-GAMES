@@ -1,0 +1,63 @@
+ /* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings styling */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+h3#score {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+h4#time {
+    font-size: 1.2rem;
+    color: #ff4500;
+    margin: 5px 0 20px;
+}
+
+/* Grid container styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates a 4x4 grid */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mole-hole styling (individual grid items) */
+.grid img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Add hover effect to images */
+.grid img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+.mole{
+    background-color: #007bff;
+}
