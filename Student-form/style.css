@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  h1#form-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Container */
+  #student-form-container {
+    width: 85%;  /* Slightly reduced width */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  .form-input,
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+  }
+  
+  .form-input:focus,
+  .form-select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Table Container */
+  #student-list-container {
+    width: 95%;  /* Increased width to reduce left and right squeeze */
+    max-width: 1200px;  /* Increased max-width for better space */
+    margin: 40px auto;
+    padding: 0 30px;  /* Added more space from left and right */
+    overflow-x: auto;
+  }
+  
+  #student-list {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #student-list th,
+  #student-list td {
+    padding: 14px 18px;  /* Reduced padding to avoid being too tight on the sides */
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid #e1e5eb;
+  }
+  
+  #student-list th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  #student-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #student-list tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  #student-list tr:hover {
+    background-color: #f1f8ff;
+  }
+  
+  #student-list td {
+    font-size: 15px;
+    line-height: 1.6;
+    vertical-align: middle;
+  }
+  
+  #student-list th:first-child,
+  #student-list td:first-child {
+    border-left: none;
+  }
+  
+  #student-list th:last-child,
+  #student-list td:last-child {
+    border-right: none;
+  }
+  
+   
